@@ -1,0 +1,35 @@
+name: 合作咨询
+description: 向湖雾岭咨询发起合作沟通（请勿提交敏感信息）
+title: "合作咨询："
+labels: ["consultation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢关注湖雾岭咨询。请仅填写适合公开的信息；商业机密、联系方式等敏感内容请等待进一步沟通。
+  - type: input
+    id: company
+    attributes:
+      label: 企业或品牌
+      placeholder: 请填写公开名称
+    validations:
+      required: true
+  - type: dropdown
+    id: service
+    attributes:
+      label: 关注的服务
+      options:
+        - 品牌战略
+        - 企业文化
+        - 内容 IP
+        - 整合营销
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 想解决的问题
+      description: 请勿填写商业机密或个人敏感信息
+    validations:
+      required: true
